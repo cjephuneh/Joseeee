@@ -3,7 +3,7 @@ import React from 'react';
 
 const CorporateView = () => {
   return (
-    <div className="container mx-auto p-6 bg-white mt-4 h-full rounded shadow-md">
+    <div className="container mx-auto p-6 bg-white mt-4  rounded shadow-md">
       <h2 className="text-lg font-semibold text-gray-800">Corporate View</h2>
       
       {/* Tabs */}
@@ -32,6 +32,12 @@ const CorporateView = () => {
             </thead>
             <tbody className="text-gray-700">
               {/* Rows */}
+              <tr className="border-b">
+                <td className="py-3 px-6 text-left">Sample 1</td>
+                <td className="py-3 px-6 text-left">Administration</td>
+                <td className="py-3 px-6 text-center">Not Started</td>
+                {/* ... other cells ... */}
+              </tr>
               <tr className="border-b">
                 <td className="py-3 px-6 text-left">Sample 1</td>
                 <td className="py-3 px-6 text-left">Administration</td>

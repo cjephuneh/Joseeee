@@ -6,7 +6,7 @@ import {
 
 const SecondaryNavbar = ({ onItemSelected }) => {
   return (
-    <div className="bg-white shadow flex items-center mt-3 justify-center px-4 py-2 space-x-12 h-14">
+    <div className="bg-white shadow flex items-center mt-3 justify-center px-4 py-2 space-x-6 h-14">
       {/* Use button elements instead of Link for handling click events */}
       <button
         onClick={() => onItemSelected("home")}
@@ -29,7 +29,42 @@ const SecondaryNavbar = ({ onItemSelected }) => {
         <ClipboardListIcon className="h-5 w-5" />
         <span>Projects</span>
       </button>
-      {/* ... other buttons ... */}
+      
+      <button
+        onClick={() => onItemSelected("milestones")}
+        className="flex items-center space-x-2 text-sm font-medium text-gray-700 hover:bg-blue-400 p-2 rounded cursor-pointer"
+      >
+        <TemplateIcon className="h-5 w-5" />
+        <span>Monitoring and EvaIuation</span>
+      </button>
+      <button
+        onClick={() => onItemSelected("analytics")}
+        className="flex items-center space-x-2 text-sm font-medium text-gray-700 hover:bg-blue-400 p-2 rounded cursor-pointer"
+      >
+        <TemplateIcon className="h-5 w-5" />
+        <span>AnaIytics </span>
+      </button>
+      <button
+        onClick={() => onItemSelected("corporate")}
+        className="flex items-center space-x-2 text-sm font-medium text-gray-700 hover:bg-blue-400 p-2 rounded cursor-pointer"
+      >
+        <TemplateIcon className="h-5 w-5" />
+        <span>Geomaps</span>
+      </button>
+      <button
+        onClick={() => onItemSelected("reports")}
+        className="flex items-center space-x-2 text-sm font-medium text-gray-700 hover:bg-blue-400 p-2 rounded cursor-pointer"
+      >
+        <TemplateIcon className="h-5 w-5" />
+        <span>Reports</span>
+      </button>
+      <button
+        onClick={() => onItemSelected("corporate")}
+        className="flex items-center space-x-2 text-sm font-medium text-gray-700 hover:bg-blue-400 p-2 rounded cursor-pointer"
+      >
+        <TemplateIcon className="h-5 w-5" />
+        <span>Resource Center</span>
+      </button>
     </div>
   );
 };

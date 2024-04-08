@@ -4,7 +4,10 @@ import Navbar from "@/components/navbar";
 import Navigation from "@/components/navigation";
 // import HomeView from "@/components/HomeView"; // Import your 'HomeView' component
 import CorporateView from "@/components/CorporateView"; // Import your 'CorporateView' component
-// import ProjectsView from "@/components/ProjectsView"; // Import your 'ProjectsView' component
+import ProjectsView from "@/components/ProjectsView"; // Import your 'ProjectsView' component
+import MilestonesView from "@/components/MilestonesView"; // Import your 'MilestoneView' component
+import AnalyticsView from "@/components/AnalyticsView"; // Import your 'MilestoneView' component\
+import ReportView from "@/components/ReportView"; // Import your 'MilestoneView' component
 
 function Page() {
   const [selectedView, setSelectedView] = useState('home'); // Initial selected view
@@ -15,13 +18,18 @@ function Page() {
   };
 
   return (
+    <div className=' h-screen'>
     <><Navbar /><div className="bg-gray-200 h-full">2
       <Navigation onItemSelected={onItemSelected} />
       {/* {selectedView === 'home' && <HomeView />} */}
       {selectedView === 'corporate' && <CorporateView />}
-      {/* {selectedView === 'projects' && <ProjectsView />} */}
+      {selectedView === 'analytics' && <AnalyticsView />}
+      {selectedView === 'projects' && <ProjectsView />}
+      {selectedView === 'milestones' && <MilestonesView />}
+      {selectedView === 'reports' && <ReportView />}
       {/* ...other views based on selectedView... */}
     </div></>
+    </div>
   );
 }
 
