@@ -19,7 +19,7 @@ const DashboardComponent = () => {
   ];
 
   return (
-    <div className="bg-white p-5 mt-5 text-black px-20">
+    <div className="bg-white rounded p-5 mt-5 text-black px-20">
       <h1 className="text-xl font-semibold text-black mb-6">Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
         {/* Stats */}
