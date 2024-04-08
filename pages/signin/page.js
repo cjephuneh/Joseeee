@@ -1,6 +1,6 @@
 // pages/login.js
 import Image from 'next/image';
-import logo from '../public/assets/Header-2.png'; // Replace with the path to your coat of arms image
+import logo from '../../public/assets/Header-2.png'; // Replace with the path to your coat of arms image
 
 export default function Login() {
   return (
