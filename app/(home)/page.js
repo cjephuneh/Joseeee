@@ -8,6 +8,7 @@ import ProjectsView from "@/components/ProjectsView"; // Import your 'ProjectsVi
 import MilestonesView from "@/components/MilestonesView"; // Import your 'MilestoneView' component
 import AnalyticsView from "@/components/AnalyticsView"; // Import your 'MilestoneView' component\
 import ReportView from "@/components/ReportView"; // Import your 'MilestoneView' component
+import ResourceView from "@/components/ResourceView"; // Import your 'MilestoneView' component
 
 function Page() {
   const [selectedView, setSelectedView] = useState('home'); // Initial selected view
@@ -27,6 +28,7 @@ function Page() {
       {selectedView === 'projects' && <ProjectsView />}
       {selectedView === 'milestones' && <MilestonesView />}
       {selectedView === 'reports' && <ReportView />}
+      {selectedView === 'resource' && <ResourceView />}
       {/* ...other views based on selectedView... */}
     </div></>
     </div>

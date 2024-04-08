@@ -59,7 +59,7 @@ const SecondaryNavbar = ({ onItemSelected }) => {
         <span>Reports</span>
       </button>
       <button
-        onClick={() => onItemSelected("corporate")}
+        onClick={() => onItemSelected("resource")}
         className="flex items-center space-x-2 text-sm font-medium text-gray-700 hover:bg-blue-400 p-2 rounded cursor-pointer"
       >
         <TemplateIcon className="h-5 w-5" />
