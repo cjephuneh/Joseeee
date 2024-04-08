@@ -1,8 +1,18 @@
 // pages/login.js
+"use client" 
 import Image from 'next/image';
 import logo from '../../public/assets/Header-2.png'; // Replace with the path to your coat of arms image
+import { useRouter } from 'next/navigation'; // Import the useRouter hook
 
 export default function Login() {
+  const navigation = useRouter(); // Initialize the useRouter hook
+
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    // Navigate to the '/home' route
+    navigation.push('/home');
+  };
+
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-200">
       <div className="flex flex-1 items-center justify-center p-8">
@@ -23,7 +33,7 @@ export default function Login() {
             <h2 className="text-xl font-bold text-center text-gray-700">Welcome!</h2>
             <p className="text-center text-gray-500">Please sign-in to your account</p>
 
-            <form className="mt-8 space-y-6" action="#" method="POST">
+            <form className="mt-8 space-y-6" action="#" method="POST" onSubmit={handleSignIn}>
               {/* Email Input */}
               <div>
                 <label htmlFor="email" className="sr-only">Email</label>
